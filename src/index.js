@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import App from './views/App';
+import Home from './views/Home/Home';
 import './index.css';
 
 //
@@ -13,7 +13,7 @@ injectTapEventPlugin();
 
 ReactDOM.render(
   <MuiThemeProvider>
-    <App />
+    <Home />
   </MuiThemeProvider>,
   document.getElementById('root')
 );

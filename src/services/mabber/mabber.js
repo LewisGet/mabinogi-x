@@ -1,5 +1,5 @@
 /**
- * Service to interface with (future) Mabinogi-N API.
+ * Service to interface with (future) Mabber API.
  */
 import cards from './cards.json';
 
