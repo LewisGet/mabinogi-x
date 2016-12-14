@@ -1,5 +1,5 @@
-import mabinogiN from '../mabinogi-n';
-import cardsJson from '../cards.json';
+import mabinogiN from './mabinogi-n';
+import cardsJson from './cards.json';
 
 describe('Mabinogi-N service', () => {
   describe('#getCards', () => {
