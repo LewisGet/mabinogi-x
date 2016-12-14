@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './Home.css';
+import config from '../../config';
+import Layout from '../../components/Layout';
 
 class Home extends Component {
   render() {
+    const { title } = config;
     return (
-      <div className="Home">
-        <div className="Home-header">
-          <img src={logo} className="Home-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="Home-intro">
-          To get started, edit <code>src/views/Home/Home.js</code> and save to reload.
-        </p>
-      </div>
+      <Layout title={title} />
     );
   }
 }

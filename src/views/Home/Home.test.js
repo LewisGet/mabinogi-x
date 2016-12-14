@@ -1,8 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import Home from './Home';
+import Layout from '../../components/Layout';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Home />, div);
+describe('<Home />', () => {
+  it('should contain a Layout', () => {
+    const home = shallow(<Home />);
+
+    expect(home.containsMatchingElement(<Layout />)).toEqual(true);
+  });
 });
