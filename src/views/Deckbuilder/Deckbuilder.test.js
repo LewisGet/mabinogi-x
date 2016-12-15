@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from '../../components/Layout';
 import MabinogiCardList from '../../components/MabinogiCardList';
 import { shallow } from 'enzyme';
 import { Deckbuilder } from './Deckbuilder';
@@ -23,7 +24,7 @@ describe('<Deckbuilder />', () => {
   it('should contain a Layout', () => {
     const deckbuilder = setup();
 
-    expect(deckbuilder.find('Layout').length).toEqual(1);
+    expect(deckbuilder.find(Layout).length).toEqual(1);
   });
 
   it('should contain <MabinogiCardList /> with  cards passed in', () => {
