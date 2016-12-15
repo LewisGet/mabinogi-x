@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Provider } from 'react-redux';
 import 'unsemantic/assets/stylesheets/unsemantic-grid-responsive.css';
 
+import store from './store';
 import Deckbuilder from './views/Deckbuilder';
 import './index.css';
 
@@ -13,8 +15,10 @@ import './index.css';
 injectTapEventPlugin();
 
 ReactDOM.render(
-  <MuiThemeProvider>
-    <Deckbuilder />
-  </MuiThemeProvider>,
+  <Provider store={store}>
+    <MuiThemeProvider>
+      <Deckbuilder />
+    </MuiThemeProvider>
+  </Provider>,
   document.getElementById('root')
 );
