@@ -17,13 +17,13 @@ describe('<Layout/>', () => {
     it('with the title passed in', () => {
       const layout = shallow(<Layout title="Test title" />);
 
-      expect(layout.find('AppBar').prop('title')).toEqual('Test title');
+      expect(layout.find(AppBar).prop('title')).toEqual('Test title');
     });
 
     it('without MenuIconButton', () => {
       const layout = shallow(<Layout title="Test title" />);
 
-      expect(layout.find('AppBar').prop('showMenuIconButton')).toEqual(false);
+      expect(layout.find(AppBar).prop('showMenuIconButton')).toEqual(false);
     });
   });
 
