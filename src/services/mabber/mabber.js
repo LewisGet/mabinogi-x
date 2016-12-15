@@ -3,7 +3,7 @@
  */
 import cards from './cards.json';
 
-function getCards() {
+export function getCards() {
   return new Promise((resolve) => {
     resolve(cards);
   });

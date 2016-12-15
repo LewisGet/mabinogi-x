@@ -1,4 +1,2 @@
-import mabber from './mabber';
-
-export default mabber;
+export * from './mabber';
 
