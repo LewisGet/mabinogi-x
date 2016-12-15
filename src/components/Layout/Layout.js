@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import AppBar from 'material-ui/AppBar';
+import { Grid, GridContainer } from 'unsemantic';
 
 const Layout = (props) => {
   const { children, title } = props;
@@ -10,7 +11,11 @@ const Layout = (props) => {
         title={title}
         showMenuIconButton={false}
       />
-      { children }
+      <GridContainer>
+        <Grid desktop="100">
+          { children }
+        </Grid>
+      </GridContainer>
     </div>
   );
 };
